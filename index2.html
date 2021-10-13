@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/css/responsive.css">
+
+    <title>SPARSH JAIN</title>
+
+    <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            flex-wrap: wrap;
+            animation-name: animation1;
+            animation-duration: 7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate;
+
+
+
+        }
+
+        @keyframes animation1 {
+            from {
+                width: 0%;
+
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* logo and image */
+        #logo {
+            margin: 10px 33px;
+        }
+
+        #logo img {
+            height: 70px;
+
+        }
+
+
+        /* background in navbar */
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+
+        }
+
+        /* list styling */
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.2rem;
+
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        /* home section */
+        #home {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-top: -56px;
+        }
+
+
+        #home::before {
+            content: "";
+            background: url('home.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Baloo Bhai', cursive;
+            text-shadow: 3px 3px black;
+
+        }
+
+        #home p {
+            color: white;
+            font-size: 1.5 rem;
+            text-align: center;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        /* utility classes */
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+
+        }
+
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+            color: red;
+            text-shadow: 3px 3px #4a460f;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* about me section */
+        .aboutme {
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        #aboutme {
+            display: flex;
+            flex-direction: row;
+            margin: 34px;
+            margin-top: 70px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #aboutme .box {
+            border: 2px solid brown;
+            height: 616px;
+            width: 300px;
+            border-radius: 70px;
+
+            background-color: #c9c0c0;
+            margin: 30px 20px 0px 17px;
+            box-shadow: 13px 5px #9f335b;
+        }
+
+
+
+
+
+
+        #aboutme .box img {
+            height: 80px;
+            display: block;
+            margin: auto;
+            margin-top: 104px;
+        }
+
+
+
+        #aboutme p {
+            margin: 8px;
+            padding: 8px;
+
+        }
+
+        .aboutme h1 {
+            font-size: 5rem;
+            margin-bottom: -119px;
+            color: orange;
+            text-shadow: 4px 4px #858557;
+        }
+
+        .text {
+            font-size: 20px;
+            color: yellow;
+            text-shadow: 2px 2px #461c30;
+        }
+
+        .footer {
+            position: relative;
+        }
+
+        .footer i {
+            margin-left: 80px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="my logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Skills</a></li>
+            <li class="item"><a href="#">Education</a></li>
+            <li class="item"><a href="#">Experience</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>- Hello</h1>
+        <h1> I'm Sparsh Jain</h1>
+        <h1 class="h-primary">WELCOME TO MY PORTFOLIO </h1>
+        <h1> You will get to know about my skills,education and many more through my website.</h1>
+        <h1>Have a look at it. </h1>
+
+
+        </p>
+    </section>
+
+    <section class="aboutme">
+        <h1 class="center">ABOUT ME</h1>
+        <div id="aboutme">
+            <div class="box">
+                <img src="skills.jpg" alt="">
+                <h2 class="h-secondary center">Skills</h2>
+                <div class="text center">
+
+                    <li>Machine Learning</li>
+                    <li> Python Programming</li>
+                    <li>Onshape Mechanical Designing</li>
+                    <li>Front-end Web Development</li>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="education.jpg" alt="">
+                <h2 class="h-secondary center">Education</h2>
+                <div class="text center">
+                    <li>passed my +2 examination from NOBLE KINGDOM PUBLIC SCHOOL,JAIPUR</li>
+                    <li>currently studying as a sophmore of Mechanical Enineering at NIT HAMIRPUR</li>
+                </div>
+            </div>
+            <div class="box">
+                <img src="experience.jpg" alt="">
+                <h2 class="h-secondary center">Experience</h2>
+                <div class="text center">
+                    <li>Currently working as a Executive Member of Robotics Society and Revanta Motorsports Club
+                        of NITH
+                    </li>
+                    <li>Also worked as a Volunteer in Medextrous(Departmental team of Mechanical Engineering at
+                        NITH)</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <a href="https://www.facebook.com/jainsparsh75" target="_blank">
+            <i class="fab fa-6x fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/jainsparsh75" target="_blank"><i class="fab  fa-6x fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sparsh-jain-580824200" target="_blank"><i
+                class="fab  fa-6x fa-linkedin-in"></i></a>
+        <a href="https://www.twitter.com/SparshJ93803171" target="_blank"><i class="fab  fa-6x fa-twitter"></i></a>
+    </section>
+
+</body>
+
+</html>
